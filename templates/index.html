@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  <title>Random Content</title>
+</head>
+<body>
+  <div class="content">
+    <h1>Checkout some random Github repos</h1>
+    <div class="result">{{ result }}</div>
+
+    <h1>Hey want to see some random year facts</h1>
+    <div class="result">{{ result2 }}</div>
+
+    <h1>Random student</h1>
+    <div class="result">{{ result3 }}</div>
+
+    <h1>Cat image</h1>
+    <div class="result">{{ result4 }}</div>
+    <img src="{{ result4 }}" alt="Random cat" />
+
+    <h1>Wanna hear a Chuck Norris joke :) </h1>
+    <div class="result">{{ result5 }}</div>
+
+    <h1>Some facts to sharpen your brain ;) </h1>
+    <div class="result">{{ result6 }}</div>
+  </div>
+</body>
+</html>
